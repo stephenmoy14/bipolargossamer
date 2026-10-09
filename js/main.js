@@ -78,3 +78,15 @@ document.querySelectorAll('.img-frame img').forEach(img => {
   if (img.complete && img.naturalWidth === 0) hide();
   img.addEventListener('error', hide);
 });
+
+// Email buttons: the address is assembled only on click (keeps it out of the page for spam bots).
+// Opens a Gmail compose window and also shows the address with a plain mailto link.
+document.querySelectorAll('[data-email-user]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const addr = btn.dataset.emailUser + '@' + btn.dataset.emailDomain;
+    const subject = encodeURIComponent(btn.dataset.emailSubject || '');
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${addr}&su=${subject}`, '_blank', 'noopener');
+    const out = btn.closest('section, .container')?.querySelector('.reveal-email');
+    if (out) out.innerHTML = `Or email <a href="mailto:${addr}?subject=${subject}">${addr}</a> from any mail app.`;
+  });
+});
