@@ -71,3 +71,10 @@ document.querySelectorAll('form[data-placeholder="true"]').forEach(form => {
 // Footer year
 const y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
+
+// Hide broken images (e.g. before photos are added) so the soft placeholder shows instead
+document.querySelectorAll('.img-frame img').forEach(img => {
+  const hide = () => img.classList.add('missing');
+  if (img.complete && img.naturalWidth === 0) hide();
+  img.addEventListener('error', hide);
+});

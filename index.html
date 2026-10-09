@@ -48,7 +48,6 @@
           <li><a href="https://www.facebook.com/bipolargossamer" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a></li>
           <li><a href="https://www.tiktok.com/@bipolargossamer" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.8 5.8 0 1 0 5 5.7V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.3-1.6z"/></svg></a></li>
           <li><a href="https://discord.gg/2A8UdWzbZ6" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24"><path d="M19.3 5.3A16.5 16.5 0 0 0 15.2 4l-.5 1a15.3 15.3 0 0 0-4.6 0L9.6 4a16.4 16.4 0 0 0-4.1 1.3C2.9 9.2 2.2 13 2.5 16.8a16.6 16.6 0 0 0 5 2.5l1.1-1.7a10.7 10.7 0 0 1-1.7-.8l.4-.3a11.8 11.8 0 0 0 10.2 0l.4.3c-.5.3-1.1.6-1.7.8l1.1 1.7a16.5 16.5 0 0 0 5-2.5c.4-4.4-.7-8.2-3-11.5zM9.1 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm5.8 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z"/></svg></a></li>
-          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=bipolargossamer@gmail.com" target="_blank" rel="noopener" aria-label="Email bipolargossamer@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a></li>
         </ul>
       </div>
     </nav>
@@ -74,10 +73,8 @@
           <p class="pos"><em>noun</em> &middot; <span class="ipa">/ˈɡɑː.sə.mɚ/</span></p>
           <p class="meaning">something light, delicate, or insubstantial</p>
         </div>
-
         <figure class="hero-image reveal">
-          <!-- TODO: replace with the hero image from the planning doc, saved as images/hero.jpg -->
-          <div class="img-placeholder" role="img" aria-label="Hero image placeholder">Hero image</div>
+          <div class="img-frame"><img src="images/butterfly.jpg" alt="A white butterfly resting on a green leaf"></div>
         </figure>
       </div>
 
@@ -97,18 +94,13 @@
           <a class="btn btn-primary" href="coaching.html">Find your wings <span class="btn-sub">with a life coach</span></a>
         </div>
         <figure class="portrait reveal">
-          <!-- TODO: replace with Cynthia's photo, saved as images/portrait.jpg -->
-          <div class="img-placeholder tall" role="img" aria-label="Portrait placeholder">Photo of Cynthia</div>
+          <div class="img-frame tall"><img src="images/portrait.jpg" alt="Cynthia, the coach behind Bipolar Gossamer" loading="lazy"></div>
         </figure>
       </div>
 
       <div class="container strength reveal">
         <h3>Finding Strength in Vulnerability</h3>
-        <div class="strength-images">
-          <!-- TODO: two supporting images from the planning doc -->
-          <div class="img-placeholder" role="img" aria-label="Image placeholder">Image</div>
-          <div class="img-placeholder" role="img" aria-label="Image placeholder">Image</div>
-        </div>
+        <div class="img-frame wide"><img src="images/strength.jpg" alt="Cynthia reaching upward under colorful lights, smiling" loading="lazy"></div>
       </div>
     </section>
 
@@ -134,6 +126,7 @@
             <p>Whether you’re navigating personal mental health challenges or supporting a loved one through theirs, I am committed to providing the support you need.</p>
           </li>
         </ol>
+        <p class="center how-cta"><a class="btn btn-primary" href="coaching.html">Learn about life coaching</a></p>
       </div>
     </section>
 
@@ -150,17 +143,30 @@
         <article class="reveal">
           <h3>Services</h3>
           <ul class="soft-list">
-            <li>1-on-1 coaching sessions</li>
-            <li>Free resources and videos through social media</li>
+            <li><a href="coaching.html">1-on-1 coaching sessions</a></li>
+            <li><a href="resources.html">Free resources</a> and videos through social media</li>
             <li>Free community on <a href="https://discord.gg/2A8UdWzbZ6" target="_blank" rel="noopener">Discord</a></li>
+            <!-- TODO: link to Patreon once the page exists, e.g. <a href="https://www.patreon.com/...">Patreon membership</a> -->
             <li>Patreon membership for exclusive perks in Discord</li>
           </ul>
+          <a class="btn btn-ghost" href="resources.html">Services &amp; free resources</a>
         </article>
-        <article class="reveal">
-          <h3>About me</h3>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ME ============ -->
+    <section class="about-band section tinted" id="about">
+      <div class="container about-grid">
+        <figure class="about-photo reveal">
+          <!-- images/about.jpg = "Fb pfp" from the Website Pictures folder -->
+          <div class="img-frame tall"><img src="images/about.jpg" alt="Cynthia smiling" loading="lazy"></div>
+        </figure>
+        <div class="reveal">
+          <p class="eyebrow">About me</p>
+          <h2>From lived experience to lifelong advocacy</h2>
           <p>My struggles and successes with mental health and bipolar disorder have led me to become a lifelong mental health advocate. Through coaching, I have helped many discover their best selves.</p>
           <a class="btn btn-ghost" href="about.html">Learn more</a>
-        </article>
+        </div>
       </div>
     </section>
 
@@ -273,7 +279,7 @@
           <li><a href="https://www.facebook.com/bipolargossamer" target="_blank" rel="noopener">Facebook</a></li>
           <li><a href="https://www.tiktok.com/@bipolargossamer" target="_blank" rel="noopener">TikTok</a></li>
           <li><a href="https://discord.gg/2A8UdWzbZ6" target="_blank" rel="noopener">Discord</a></li>
-          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=bipolargossamer@gmail.com" target="_blank" rel="noopener">bipolargossamer@gmail.com</a></li>
+          <li><a href="contact.html">Contact me</a></li>
         </ul>
       </div>
     </div>

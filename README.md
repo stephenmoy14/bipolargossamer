@@ -13,8 +13,21 @@ images/           Put photos here (hero.jpg, portrait.jpg, ...)
 ## Preview locally
 Double-click `index.html`, or run `python -m http.server` in this folder and open http://localhost:8000.
 
+## Photos
+Full-size originals from Cynthia's "Website Pictures" Drive folder live in `images/originals/`. That folder is git-ignored, so it never gets pushed. The site uses resized copies:
+
+| Original | Used as | Where |
+|---|---|---|
+| background of above the fold? | `images/butterfly.jpg` (900px square) | Hero, next to "Gossamer" |
+| "Photo of Cynthia" | `images/portrait.jpg` (900px wide) | "Navigating Life with Bipolar Disorder" |
+| Strength in vulnerability | `images/strength.jpg` (900px) | "Finding Strength in Vulnerability" |
+| Fb pfp | `images/about.jpg` (800x1000 crop) | About me section |
+| fb pfp sunset ocean | not used yet | |
+| secondary professional photo | not used (low-res screenshot) | |
+
+When adding photos, keep them under about 1600px wide and 300 KB.
+
 ## To-dos marked in index.html (search for `TODO`)
-- **Images:** add the hero image, Cynthia's portrait and the two "Strength in Vulnerability" images to `images/`, then swap each `<div class="img-placeholder">` for `<img src="images/NAME.jpg" alt="describe the photo">`.
 - **YouTube:** set `data-video-id="..."` on the `.yt` element to embed a video.
 - **Mood tracker sign-up:** replace the `<form class="signup">` with an embed from Tally, MailerLite, Kit or a similar service.
 - **Reviews:** replace the placeholder quotes with real testimonials (with permission).
